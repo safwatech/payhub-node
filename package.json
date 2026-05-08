@@ -6,8 +6,10 @@
   "homepage": "https://payhub.ly",
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/safwatech/payhub.git",
-    "directory": "sdks/node"
+    "url": "git+https://github.com/safwatech/payhub-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/safwatech/payhub-node/issues"
   },
   "type": "module",
   "main": "./dist/index.js",
