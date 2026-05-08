@@ -22,6 +22,14 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
+      - name: Stage shared test vectors at the path tests expect
+        run: |
+          # Tests reference __dirname/../../shared/test-vectors/...
+          # On the mirror, the vectors live in vendor/shared/test-vectors/
+          # — stage a sibling 'shared/' so both monorepo and mirror runs
+          # resolve the same path.
+          mkdir -p ../shared
+          cp -R vendor/shared/test-vectors ../shared/
       - run: npm run build
       - run: npm test
       - run: npm publish --provenance --access public
