@@ -1,5 +1,5 @@
 {
-  "name": "@payhub/node",
+  "name": "@payhub-ly/node",
   "version": "1.0.0",
   "description": "Official PayHub SDK for Node.js / TypeScript.",
   "license": "MIT",

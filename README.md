@@ -1,10 +1,10 @@
-# @payhub/node
+# @payhub-ly/node
 
 Official PayHub SDK for Node.js / TypeScript. ESM + CJS, types included,
 zero runtime dependencies.
 
 ```
-npm install @payhub/node
+npm install @payhub-ly/node
 ```
 
 > **PayHub API:** v1 · **Node:** ≥18 · **License:** MIT
@@ -12,7 +12,7 @@ npm install @payhub/node
 ## 1. Authenticate
 
 ```ts
-import { Payhub } from "@payhub/node";
+import { Payhub } from "@payhub-ly/node";
 
 const client = new Payhub({
   apiKey: process.env.PAYHUB_API_KEY!, // "phk_<id>.<secret>"
@@ -55,7 +55,7 @@ console.log(settled.status); // "succeeded" or "failed"
 
 ```ts
 import express from "express";
-import { WebhookEvent, WebhookSignatureError } from "@payhub/node";
+import { WebhookEvent, WebhookSignatureError } from "@payhub-ly/node";
 
 const app = express();
 
