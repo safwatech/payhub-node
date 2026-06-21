@@ -28,7 +28,7 @@ const client = new Payhub({
 const payment = await client.payments.create({
   psp: "sadad",
   merchant_order_ref: "ord-42",
-  amount_minor: 4500,                  // 4.5 LYD = 4 500 fils
+  amount_minor: 5,                  // 5 LYD
   customer: {
     msisdn: "218910000001",            // mandatory for Sadad
     birth_year: 1990,                  // mandatory for Sadad
